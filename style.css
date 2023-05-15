@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu {
+    background-color: #041014;
+    text-align: right;
+}
+
+#menu img {
+    margin-left: 20px;
+    margin-top: 3px;
+    float: left
+}
+
+#menu h1 {
+    float: left;
+    display: inline-block;
+    padding: 12px;
+    color: #fff
+}
+
+#menu ul {
+    /* max-width: 800px; */
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu ul li a:hover {
+    background-color: #145269b1;
+}
+
+#home {
+    background-color: #1452692b;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+#home h2 {
+    padding: 20px;
+    color: #041014;
+}
+
+#sobre {
+    background-color: #041014;
+}
+
+#sobre h2 {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #FFF;
+}
+
+#sobre img {
+    text-align: center;
+    padding: 30px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.sobre {
+    grid-area: sobre;
+    text-align: justify;
+    color: #FFF;
+    padding-right: 40px;
+}
+
+.container-sobre {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "logo sobre";
+    justify-items: stretch;
+    justify-content: stretch;
+}
+
+#quem_somos {
+    background-color: #1452692b;
+    padding-top: 30px;
+}
+
+#quem_somos h2 {
+    text-align: center;
+    color: #041014
+}
+
+.perfil img {
+    border-radius: 50%;
+}
+
+.perfil {
+    text-align: center;
+}
+
+.container-quemsomos {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas: "perfil perfil";
+    justify-items: stretch;
+    padding-bottom: 40px;
+}
+
+#contato {
+    background-color: #448cac;
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#contato h2 {
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+}
