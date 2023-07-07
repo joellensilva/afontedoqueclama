@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Portal Milagres</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+
+<body style="background-color:#448cac">
+    <div id="centro">
+    <form id="form">
+        <h1>Entre em contato</h1>
+
+        <label for="nome">Seu nome*</label>
+        <input type="text" id="nomeid" placeholder="Ex.: Maria" required="required" name="nome" />
+        <br>
+        <label for="fone">Telefone para contato*</label>
+        <input type="tel" id="foneid" placeholder="Ex.: (xx) xxxxx-xxxx" name="fone" required="required"/>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="emailid" placeholder="Ex.: fulano@mail.com" name="email" />
+        <br>
+        <textarea placeholder="Deixe sua opinião, sugestão ou pedido de oração!"></textarea>
+        <br>
+        <input type="submit" class="enviar" onclick="enviar();" value="Enviar" />
+    </form>
+</div>
+</body>
+
+</html>

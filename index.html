@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 </head>
 
 <body>
     <!DOCTYPE html>
     <html lang="pt-br">
+
     <body>
         <nav id="menu">
             <img src="src/logo.png" alt="Portal Milagres: Conectados com o reino" width="65" height="auto">
@@ -27,7 +30,19 @@
         </nav>
         <nav id="home">
             <h2>Assista-nos pelo Youtube!</h2>
-            <iframe width="50%" height="535" src="https://www.youtube.com/embed/imL3BlW_LFs?start=5"
+            <form>
+                <div>
+                    <label for="selectvideo">Selecione o vídeo:</label>
+                    <select id="selectvideo">
+                        <option value="0">LIVE - Vigília OnLine - 31/07/2020</option>
+                        <option value="1">LIVE - Permaneçam no Amor! - 31/07/2020</option>
+                        <option value="2">LIVE - Você é Bem-Aventurado - 14/07/2020</option>
+                    </select>
+            </form>
+        </div>
+        <button id="btn" onclick="selecionarVideo();">Assistir</button>
+        <br>
+            <iframe id="video" width="50%" height="535" src="https://www.youtube.com/embed/imL3BlW_LFs?start=5"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
@@ -80,6 +95,7 @@
                     <li>E-mail: contato@exemplo.com</li>
                     <li>Telefone: (11) 1234-5678</li>
                     <li>Endereço: Rua André Leão, 1033 - Arapiraca/AL</li>
+                    <li>Formulário: <a href="forms.html">clique aqui</a></li>
                 </ul>
             </div>
         </nav>
